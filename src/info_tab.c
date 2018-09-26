@@ -112,7 +112,7 @@ t_pos		*get_pos_player(char **tab)
     my_exit(EXIT_MALLOC, "Malloc error of struct t_pos.\n");
   i = 0;
   j = 0;
-  while (tab[j] != '\0')
+  while (tab[j] != NULL)
     {
       i = 0;
       while (tab[j][i] != '\0')
