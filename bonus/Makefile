@@ -48,9 +48,9 @@ SRCS            =       $(SRCS_DIR)main.c                       \
 
 OBJS		= 	$(SRCS:.c=.o)
 
-CFLAGS		+= 	-I./include #-Wall -Wextra -Werror 
+CFLAGS		+= 	-I./include -Wall -Wextra -Werror 
 
-LDFLAGS		+=	-L./lib/my -lmy -lc_graph_prog_full
+LDFLAGS		+=	-L./lib/my -lmy -lcsfml-graphics -lcsfml-window -lcsfml-system -lcsfml-audio
 
 ifeq ($(DEBUG), yes)
 	CFLAGS	+=	-g3

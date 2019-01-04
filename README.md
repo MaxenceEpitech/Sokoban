@@ -1,5 +1,8 @@
 # Sokoban
 
+### Demo :
+![](public/demo.gif)
+
 ### Use of Shell version :
 ```
 $ make re
